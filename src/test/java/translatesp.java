@@ -7,7 +7,7 @@ public class translatesp {
 
         public static String translate(String title) {
             Translate translate = TranslateOptions.newBuilder()
-                    .setApiKey("AIzaSyCIeRXutC0n9hRa_PGg64XTLA4HGIL4MXU")
+                    .setApiKey("xx")
                     .build()
                     .getService();
 

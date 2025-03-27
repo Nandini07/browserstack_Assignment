@@ -22,8 +22,8 @@ import static java.lang.Thread.sleep;
 public class testmb{
     protected WebDriver driver;
 
-    private static final String USERNAME = "sainandini_dosYlv";
-    private static final String ACCESS_KEY = "8rH99LdUARw3Ruu8GUzp";
+    private static final String USERNAME = "xx"; // username and accesskey are not provided
+    private static final String ACCESS_KEY = "xx";
     private static final String BROWSERSTACK_URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
     private WebDriverWait wait;
 
