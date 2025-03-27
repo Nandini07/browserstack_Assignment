@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelBrowserStackSuite" parallel="tests" thread-count="5">
+    <test name="Chrome-Windows11">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platformName" value="Windows"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="deviceName" value=""/>
+        <classes>
+            <class name="testsp"/>
+        </classes>
+    </test>
+    <test name="Firefox-MacOS">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platformName" value="OS X"/>
+        <parameter name="platformVersion" value="Ventura"/>
+        <parameter name="deviceName" value=""/>
+        <classes>
+            <class name="testsp"/>
+        </classes>
+    </test>
+    <test name="MobileTest">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="deviceName" value="Samsung Galaxy S21"/>
+        <classes>
+            <class name="testmb"/>
+        </classes>
+    </test>
+    <test name="edge-android">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="deviceName" value="Samsung Galaxy S23"/>
+        <classes>
+            <class name="testmb"/>
+        </classes>
+    </test>
+    <test name="Edge-Windows10">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platformName" value="Windows"/>
+        <parameter name="platformVersion" value="10"/>
+        <parameter name="deviceName" value=""/>
+        <classes>
+            <class name="testsp"/>
+        </classes>
+    </test>
+
+
+</suite>
